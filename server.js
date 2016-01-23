@@ -19,7 +19,7 @@ var middleware = {
 app.use(middleware.logger);
 
 app.get('/about', middleware.requireAuthentification, function(req, res){
-  res.send('this is the about');
+  res.send('this is the about page');
 });
 
 //you now have access to anything in this folder, even without specifying a route
